@@ -5,6 +5,7 @@ import { AppModule } from './app.module'
 
 const expressApp = express()
 const adapter = new ExpressAdapter(expressApp)
+const port = process.env.PORT || 3000
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, adapter, {
@@ -26,7 +27,9 @@ async function bootstrap() {
   // disable x-powered-by express header
   app.disable('x-powered-by')
 
-  await app.listen(process.env.PORT || 3000)
+  await app.listen(port)
 }
 
-bootstrap()
+bootstrap().then(() => {
+  console.log(`🚀 App listen on http://localhost:${port}`)
+})
