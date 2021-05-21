@@ -1,0 +1,11 @@
+---
+application:
+  name: "nest-starter"
+  project: "nest"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-nest-starter"
+  routes:
+  - application_name: "nest-starter"
+    paths:
+    - "/*"
