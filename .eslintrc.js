@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['alloy', 'alloy/react', 'alloy/typescript'],
+  extends: ['alloy', 'alloy/typescript'],
   env: {
     node: true,
   },
