@@ -7,17 +7,17 @@ A Nest.js starter project.
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run dev
+$ yarn run dev
 
 # production mode
-$ npm run build
+$ yarn run build
 ```
 
 ## License
