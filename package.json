@@ -16,9 +16,9 @@
     "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix"
   },
   "dependencies": {
-    "@nestjs/common": "8.0.7",
-    "@nestjs/core": "8.0.7",
-    "@nestjs/platform-express": "8.0.7",
+    "@nestjs/common": "8.0.8",
+    "@nestjs/core": "8.0.8",
+    "@nestjs/platform-express": "8.0.8",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "7.3.0"
