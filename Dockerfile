@@ -10,10 +10,11 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app/package.json
-COPY yarn.lock /usr/src/app/yarn.lock
+COPY pnpm-lock.yaml /usr/src/app/pnpm-lock.yaml
 
 # RUN yarn --registry=https://mirrors.cloud.tencent.com/npm/ && yarn
-RUN yarn
+RUN npm install -g pnpm
+RUN pnpm install
 
 COPY . .
 
